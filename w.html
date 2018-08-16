@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script type="text/javascript">
+	// for (var i=0;i<12;i++){}
+	// 	console.log(i);
+	
+	function sort(elements){
+		for (var i = 1; i < elements.length; i++) {
+			if (elements[i] < elements[i-1]) {
+				var guard=elements[i];
+				var j=i-1;
+				// console.log(j);
+				// elements[i]=elements[j];
+				while(j >=0 && guard < elements[j]){
+					console.log(j);
+					elements[j+1]=elements[j];
+					j--;
+					// console.log(j);
+					elements[j+1]=guard;
+				}					
+				// elements[j+1]=guard;
+			}
+		}
+	}
+	var elements=[5,9,3,6,7,4,1,8,2];
+	document.write('没调用之前：'+elements);
+	document.write('<br>');
+	sort(elements);
+	document.write('调用之后：'+elements);
+</script>
+</html>

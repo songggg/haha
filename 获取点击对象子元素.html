@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+		<script type="text/javascript" src="js/jquery-1.11.1.js"></script>  
+</head>
+<body>
+	<ul class="box">
+        <li>子元素1</li>
+        <li>子元素2</li>
+        <li>子元素3</li>
+        <li>子元素4</li>
+        <li>子元素5</li>
+    </ul>
+</body>
+</html>
+<script type="text/javascript">
+	        //获取li内容
+        function getLi(obj,index){
+            var child = obj.children("li").eq(index);
+            return child.html();
+        }
+        $(function(){
+            var c = 0;
+            $(".box").click(function(){
+                if(c == 0){
+                   alert(getLi($(this),c));
+                    c++;
+                }else if(c == 1){
+                    console.log(getLi($(this),c));
+                    c++;
+                }else if(c == 2){
+                    console.log(getLi($(this),c));
+                    c++;
+                }else if(c == 3){
+                    console.log(getLi($(this),c));
+                    c++;
+                }else if(c == 4){
+                    console.log(getLi($(this),c));
+                    c = 0;
+                }
+            });
+        });
+</script>

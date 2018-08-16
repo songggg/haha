@@ -1,0 +1,422 @@
+.grid{
+	height: 480px;
+	margin-bottom: 10px;
+	position: relative;
+}
+.grid-col1{
+	width: 190px;
+	height: 100%;
+	background-color: #6e6568;
+	color: #fff;
+	font-size: 14px;/*不是给字的，给/的*/
+}
+/*.grids{
+	position: relative;
+}*/
+.ad{
+	height: 480px;
+	top: 0;
+    left:-165px;
+    right: 0;
+    height: 100%;
+    display: block;
+    outline: 0;
+    z-index: 1;
+	/*background-color:pink;*/
+	position: absolute;
+	/*left:-175px;*/
+	
+}
+.grid-col1 a{
+	color: #fff;
+	font-size: 16px;/*是给字的*/
+	margin: 0 3px;
+}
+.grid-col1 ul{
+	padding: 10px 0;
+}
+.grid-col1 ul li{
+	padding-left: 12px;/*体会为什么不用margin*/
+	height: 29px;
+	line-height: 29px;
+}
+.grid-col1 ul li:hover{
+	background-color: #9c9698;
+}
+.grid-col2{
+	width: 790px;
+	height: 100%;
+	margin-left: 10px;
+	/*position: absolute;
+	top: 0;*/
+}
+/*banner部分*/
+.banner li{
+	position: absolute;
+	display: none;
+}
+.banner li:first-child {
+      display: block;
+}
+.grid-col2-b div{
+	float: left;
+	margin-top: 10px;
+}
+.grid-col2-b div:last-child{
+	float: right;
+	margin-top: 10px;
+}
+/*箭头部分*/
+.grid-col2-t{
+	position: relative;
+	width: 790px;
+	height: 340px;
+}
+.arrow-l,
+.arrow-r{
+	position: absolute;
+	top:50%;
+	width: 30px;
+	height: 60px;
+	background-color: rgba(0,0,0,0.3);
+	transform: translateY(-50%);
+	text-align: center;
+	line-height: 60px;
+	font-size: 20px;
+	color: rgba(255,255,255,0.3);
+	font-family: aial;
+	font-weight: normal;
+}
+.arrow-r{
+	right: 0;
+}
+.arrow-l,.arrow-r{
+  display: none;
+}
+    
+.grid-col2-t:hover    .arrow-r{
+  display: block;
+}
+.grid-col2-t:hover    .arrow-l{
+  display: block;
+}
+.quality_b_r_t:hover   .arrow-r{
+  display: block;
+}
+.quality_b_r_t:hover   .arrow-l{
+  display: block;
+}
+.circle{
+	width: 167px;
+	height: 20px;
+	background-color:rgba(255,255,255,0.8);
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	transform: translateX(-50%);
+	border-radius: 10px;
+	padding-left: 8px;
+}
+.circle li{
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border-radius:50%;
+	float:left;
+	margin: 4px;
+    cursor: pointer;/*鼠标经过li的时候变成小手*/
+}
+.circle .current{
+	background-color: #f10215;
+}
+.grid-col3{
+	width: 190px;
+	height: 100%;
+	/*background-color: skyblue;*/
+	/*position: absolute;*/
+}
+/*分类导航栏*/
+
+/*.nav_left ul li {
+		height: 50px;
+		line-height: 50px;
+		text-align: left;
+	}
+	
+	.nav_left ul li span {
+		padding-left: 10px;
+		height: 50px;
+		line-height: 50px;
+		display: block;
+		background: #FF0036;
+		color: #fff;
+	}
+	
+	.nav_left ul li span:hover {
+		color: #FF0036;
+		background: #FFFFFF;
+	}
+	*/
+	.nav_right {
+		width: 800px;
+		height: 480px;
+		position: absolute;
+		margin-left: 190px;
+		top: 0px;
+		/*z-index: 2;*/
+	}
+	
+	.sub {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: 480px;
+		background: #FFFFFF;
+		padding: 10px 0px;
+	}
+	
+	.sub dl {
+		overflow: hidden;
+		padding: 0px 0px 10px 0px;
+	}
+	
+	.sub dt {
+		width: 100px;
+		float: left;
+		display: block;
+		position: relative;
+		clear: left;
+	}
+	
+	.sub dt a {
+		font-size: 14px;
+		color: #000;
+		font-weight: bold;
+		text-align: center;
+		padding-left: 20px;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	
+	.sub dt i {
+		width: 4px;
+		right: 12px;
+		top: 2px;
+		font-size: 14px;
+		position: absolute;
+		font-style: normal;
+	}
+	
+	.sub dd {
+		width: 680px;
+		float: left;
+		display: block;
+		position: relative;
+		overflow: hidden;
+		padding-right: 20px;
+		border-bottom: 1px dashed #E3E3E3;
+	}
+	
+	.sub dd a {
+		font-size: 12px;
+		float: left;
+		color: #666;
+		padding: 0 10px;
+		margin: 4px 0px 10px 0px;
+		text-decoration: none;
+		cursor: pointer;
+		border-left: 1px solid #E3E3E3;
+	}
+	
+	.sub dd a:hover {
+		color: #FF0036;
+	}
+		
+	.hide {
+		display: none;
+	}
+	.show {
+		display: block;
+	}
+/*右边模块*/
+.login{
+	height: 85px;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+	padding: 15px;
+}
+.login-t{
+	width: 95px;
+	height: 60px;
+	font-size: 12px;
+	line-height: 20px;
+	white-space: nowrap;/*强制一行内显示*/
+	overflow:hidden;/*溢出隐藏*/
+	text-overflow: ellipsis;/*超出的部分显示省略号*/
+	color: #666;
+	padding-left: 60px;
+	position: relative;
+}
+.login-t a{
+	color: #666;
+}
+.login-t a:hover{
+	color: #f10512;
+}
+.user-info{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+    left: 0;
+    top: 0;
+   /* border-radius: 50%
+    overflow:hidden;*/
+}
+.user-info img{
+	width: 100%;
+	border-radius:50%;
+}
+.login-b a{
+	display: inline-block;
+	width: 70px;
+	height: 20px;
+	line-height: 20px;
+	border: 2px solid #f10512;
+	color: #f10512;
+	margin-right: 3px;
+	text-align: center;
+}
+.login-b a:hover{
+	background-color: #f10512;
+	color: #fff;
+}
+.news{
+	height: 154px;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+	padding: 7px 13px 0;
+	box-sizing: border-box;
+}
+.news-t{
+	height: 19px;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.news-t a{
+	float: left;
+}
+.cuxiao{
+	width: 38px;
+	height: 17px;
+	line-height: 17px;
+	border-right: 1px solid #ccc;
+}
+.gg{
+	margin-left: 15px;
+}
+ .news-t .more{
+	float: right;
+}
+.news-t div{
+	height: 2px;
+	width: 28px;
+	background-color:  #f10512;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+}
+.news-b{
+	padding-top: 15px;
+	box-sizing: border-box;	
+}
+.news-b li{
+	height: 23px;
+	line-height: 23px;
+}
+.expand{
+	height: 209px;
+	background-color:#fff;
+    overflow: hidden;/*expand继承了父亲的宽度190*/
+}
+.expand ul{
+	width: 195px;/*父亲是190但是里面的li宽度超过了190摆放不开4个li此时让ul宽度变大*/
+	height: 214px;
+}
+.expand li{
+	width: 47px;
+	height: 69px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	float: left;  
+}
+.expand li a{
+	display: block;
+	padding-top: 15px;
+	text-align: center;
+}
+.expand li i{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	background:url(../images/sprite_fs@1x.png) no-repeat;
+}
+.expand li:first-child i{
+	width: 18px;
+	height: 23px;
+    background-position: -5px -88px;
+}
+.expand li:nth-child(2) i{
+	width: 18px;
+	height: 23px;
+    background-position: -47px -88px;
+}
+.expand li:nth-child(3) i{
+	width: 18px;
+	height: 23px;
+    background-position: -93px -88px;
+}
+.expand li:nth-child(4) i{
+	width: 25px;
+	height: 14px;
+    background-position: -87px -6px;
+}
+.expand li:nth-child(5) i{
+	width: 24px;
+	height: 23px;
+    background-position: -88px -46px;
+}
+.expand li:nth-child(6) i{
+	width: 19px;
+	height: 21px;
+    background-position: -3px -1px;
+}
+.expand li:nth-child(7) i{
+	width: 23px;
+	height:16px;
+    background-position: -45px -48px;
+}
+.expand li:nth-child(8) i{
+	width: 21px;
+	height:21px;
+    background-position: -2px -46px;
+}
+.expand li:nth-child(9) i{
+	width: 20px;
+	height:23px;
+    background-position: -133px -1px;
+}
+.expand li:nth-child(10) i{
+	width: 17px;
+	height:25px;
+    background-position: -137px -44px;
+}
+.expand li:nth-child(11) i{
+	width: 23px;
+	height:14px;
+    background-position: -133px -93px;
+}
+.expand li:nth-child(12) i{
+	width: 18px;
+	height:24px;
+    background-position: -47px -1px;
+}
